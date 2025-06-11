@@ -14,3 +14,7 @@ const emailValue = emailInput.value.trim();
 
 const passwordInput = document.getElementById("password");
 const passwordValue = passwordInput.value.trim();
+
+const isValid = true;
+const messages = [];
+
