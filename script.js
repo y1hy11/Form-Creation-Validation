@@ -1,3 +1,7 @@
-const form = document.getElementById('registrationForm');
+const form = document.getElementById("registrationForm");
 
-const feedbackDiv = document.getElementById('form-feedback');
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
+
+const feedbackDiv = document.getElementById("form-feedback");
