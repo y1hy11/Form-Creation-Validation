@@ -25,6 +25,11 @@ if (!emailValue.includes("@") || !emailValue.includes(".")) {
 const passwordInput = document.getElementById("password");
 const passwordValue = passwordInput.value.trim();
 
+if (passwordValue.length < 8) {
+    isValid = false;
+    messages.push("Password must be at least 8 characters long.");
+}
+
 const isValid = true;
 const messages = [];
 
