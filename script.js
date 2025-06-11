@@ -1,24 +1,23 @@
 const form = document.getElementById("registrationForm");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
-});
 
-const isValid = true;
-const messages = [];
+  const isValid = true;
+  const messages = [];
 
-const usernameInput = document.getElementById("username");
-const usernameValue = usernameInput.value.trim();
+  const usernameInput = document.getElementById("username");
+  const usernameValue = usernameInput.value.trim();
 
-if (usernameValue.length < 3) {
+  if (usernameValue.length < 3) {
     isValid = false;
     messages.push("Username must be at least 3 characters long.");
-};
+  }
 
-const emailInput = document.getElementById("email");
-const emailValue = emailInput.value.trim();
+  const emailInput = document.getElementById("email");
+  const emailValue = emailInput.value.trim();
 
-if (!emailValue.includes("@") || !emailValue.includes(".")) {
+   if (!emailValue.includes("@") || !emailValue.includes(".")) {
     isValid = false;
     messages.push("Email must be a valid email address.");
 }
@@ -43,4 +42,7 @@ if (isValid === true) {
 } else {
     feedbackDiv.innerHTML = "<p>Form submission failed.</p>";
     feedbackDiv.style.color = "#dc3545"; 
-}
+};
+
+form.submit();
+});
