@@ -17,6 +17,11 @@ if (usernameValue.length < 3) {
 const emailInput = document.getElementById("email");
 const emailValue = emailInput.value.trim();
 
+if (!emailValue.includes("@") || !emailValue.includes(".")) {
+    isValid = false;
+    messages.push("Email must be a valid email address.");
+}
+
 const passwordInput = document.getElementById("password");
 const passwordValue = passwordInput.value.trim();
 
