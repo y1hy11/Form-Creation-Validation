@@ -9,6 +9,11 @@ const feedbackDiv = document.getElementById("form-feedback");
 const usernameInput = document.getElementById("username");
 const usernameValue = usernameInput.value.trim();
 
+if (usernameValue.length < 3) {
+    isValid = false;
+    messages.push("Username must be at least 3 characters long.");
+};
+
 const emailInput = document.getElementById("email");
 const emailValue = emailInput.value.trim();
 
