@@ -5,3 +5,10 @@ form.addEventListener("submit", function (event) {
 });
 
 const feedbackDiv = document.getElementById("form-feedback");
+
+
+const usernameInput = document.getElementById("username");
+
+const emailInput = document.getElementById("email");
+
+const passwordInput = document.getElementById("password");
