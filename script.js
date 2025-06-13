@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         feedbackDiv.style.display = "block";
 
         if (isValid === true) {
-            feedbackDiv.innerHTML = "<p>Form submitted successfully!</p>";
+            feedbackDiv.innerHTML = "<p>Registration successful!</p>";
             feedbackDiv.style.color = "#28a745";
         } else if (isValid === false) {
             feedbackDiv.innerHTML = "<p>" + messages.join("<br>") + "</p>";
